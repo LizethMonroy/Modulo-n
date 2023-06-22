@@ -5,23 +5,24 @@ Las congruencias modulo n definen una relación de equivalencia en Z. Demostraci
 
 //CODIGO FUENTE//
 ```
-#include <iostream>
+#include <stdio.h>
 
 int main() {
     int numero, n, resultado;
 
-    std::cout << "Ingrese el número: ";
-    std::cin >> numero;
+    printf("Ingrese el número: ");
+    scanf("%d", &numero);
 
-    std::cout << "Ingrese el valor de n: ";
-    std::cin >> n;
+    printf("Ingrese el valor de n: ");
+    scanf("%d", &n);
 
     resultado = numero % n;
 
-    std::cout << "La congruencia de " << numero << " modulo " << n << " es: " << resultado << std::endl;
+    printf("La congruencia de %d modulo %d es: %d\n", numero, n, resultado);
 
     return 0;
 }
+
 ```
 
 //INDICACIONES//
